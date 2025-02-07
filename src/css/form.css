@@ -1,0 +1,75 @@
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.home-btn {
+  background-color: transparent;
+  max-width: 95px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: gray;
+}
+
+.home-btn:hover,
+.home-btn:focus {
+  background-color: #dcdcdc;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: black;
+}
+
+.feedback-form button {
+  background-color: transparent;
+  color: grey;
+  max-width: 95px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.feedback-form button:hover {
+  background-color: #dcdcdc;
+}
+
+h1 {
+  font-weight: 300;
+}

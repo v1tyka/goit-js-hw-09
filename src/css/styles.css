@@ -1,18 +1,49 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  text-align: center; /* Ensure text is centered */
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+.container {
+  display: flex;
+  flex-direction: column; /* Stack h1 and ul vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 20px; /* Space between h1 and list */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+
+li {
+  background-color: transparent;
+  max-width: 120px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+li:hover,
+li:focus {
+  background-color: #dcdcdc;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+h1 {
+  font-weight: 300;
+}
